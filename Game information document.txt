@@ -1,0 +1,46 @@
+How to play / controls:
+- The aim of the game is to get the particles through the run avoiding obsticles and into the collector
+- You control the game by clicking the mouse (mouse is heavily reccomended) 
+- holding the mouse click down will suspend gravity 
+- you can save and load by pressing l or s (just name them you don't need to add the extension)
+
+- - - - - - - - - - - - - - - - - - - - - - 
+Level editor: 
+- has its own seperate controls, use the mouse to click where you want a component to go
+- use r to rotate and the arrow keys to adjust the size of walls and hazard blocks (allows you to make the level however you want)
+- once saved (there is a button) you can load up levels you've made through the level select button
+
+If you try and save without having a spawner and collector you will run into problems 
+- - - - - - - - - - - - - - - - - - - - - -
+Extra feature:
+- The main extra feature is the level editor that lets you create levels with ease, store them and then select which you want to play
+- The level editor has its own mouse handler and keyAdapter as well as storing all data wasting as little space as possible
+- The user made levels work in exactly the same way as the hard coded levels keeping track of your score and other variables 
+- The user made levels can also be saved / loaded using l or s 
+- - - - - - - - - - - - - - - - - - - - - - 
+Saving / loading:
+- The saving and loading system doesn't just keep track of the level you're on and your score it also keeps track of 
+every single particles position and when loaded back up places them all back to where they left off
+- as stated above the Saving / loading also works with custom made levels 
+- - - - - - - - - - - - - - - - - - - - - -
+Complex features:
+- The way you control the swarm of particles using matrix manipulation
+- The way portals work as they retain your position from center and angle as they eject
+- The way components of the level are stored in the levelEditorData class linked with the editor current and levelEditor
+- The way particles interact with eachother and the obsticles such as the gravity well
+- The construction of the level editor 
+- - - - - - - - - - - - - - - - - - - - - - 
+Documentation:
+The three complex classes documented are
+- ParticleCol
+- customLevel
+- portal
+For some reason I couldn't get the comments to appear in the html javadoc but if you look at the classes you will see the documentation
+
+
+
+NOTE ABOUT TEXTURES; 
+I created a fair amount of textures to use on a lot of the bodies (can find in the data file) 
+however in the end I opted not to use them as the game looked better from a more simplistic view and 
+doing textures for the walls in the level editor would've been a great challenge having to do custom generation
+of textures so I thought it would be jarring to see have the walls textured on one part but not the rest
